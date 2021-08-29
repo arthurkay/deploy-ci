@@ -1,0 +1,4 @@
+*_test.go
+deploy-ci
+*.yml
+!test.yml

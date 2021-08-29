@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+
+  tasks:
+    - name: test-ansible-playbook 
+      debug:
+        msg: You are running 'Deploy CI' example
