@@ -1,5 +1,11 @@
 # Deploy CI
 
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/arthurkay/deploy-ci)
+![GitHub](https://img.shields.io/github/license/arthurkay/deploy-ci)
+[![Go Report Card](https://goreportcard.com/badge/github.com/arthurkay/deploy-ci)](https://goreportcard.com/report/github.com/arthurkay/deploy-ci)
+[![Go](https://github.com/arthurkay/env/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/arthurkay/env/actions/workflows/go.yml)
+![GitHub issues](https://img.shields.io/github/issues-raw/arthurkay/deploy-ci)
+
 CI and CD are two acronyms frequently used in modern development practices and DevOps. CI stands for continuous integration, a fundamental DevOps best practice where developers frequently merge code changes into a central repository where automated builds and tests run.
 
 ## What is Deploy CI
@@ -22,7 +28,7 @@ Deploy CI creates an API end point that gets hit and responds by executing and a
 Setting It Up
 
 The project can be cloned to a resource directory, e.g `/usr/local/src`.
-From there the user can edit the [Evironemnt File](environment.conf) to addjust parameters like the port, the playbook to run and the user to run the play as.
+From there the user can edit the [Evironment File](environment.conf) to addjust parameters like the port, the playbook to run and the user to run the play as.
 
 The config file looks something like the following:
 
@@ -48,6 +54,6 @@ make setup
 
 The above sequence of comands sets the values to be used as paramters when the make `setup` target runs.
 
-***NOTE***: Environment variables set as export flags in the terminal tak precedence over the ones in the [Evironemnt File](environment.conf).
+***NOTE***: Environment variables set as export flags in the terminal tak precedence over the ones in the [Evironment File](environment.conf).
 
 After setting up the tool, it can be managed with systemd.
