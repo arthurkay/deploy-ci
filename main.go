@@ -23,6 +23,7 @@ func main() {
 	}
 }
 
+// RequestHandler handes all requests that come in to the application via HTTP calls.
 func RequestHandler(w http.ResponseWriter, r *http.Request) {
 	var playbook string = os.Args[2]
 	var user string = os.Args[3]
